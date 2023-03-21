@@ -9,7 +9,6 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  color: black;
 }
 
 :root {
@@ -40,6 +39,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-bottom: 2px solid var(--main-color);
 }
 
 .logo {
@@ -63,4 +63,17 @@ body {
   color: var(--text-color);
   font-size: 3.6rem;
   display: none;
+}
+#nav-resume-dowload-icon {
+  color: var(--bg-color);
+  font-size: 1.5rem;
+}
+.resume {
+  padding: 0.7rem 1rem;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+#resume {
+  color: var(--bg-color);
 }
