@@ -89,23 +89,382 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid red; */
+}
+.home-content {
+  /* border: 3px solid blue; */
+  width: 70%;
 }
 .home-content h3 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+span {
+  color: var(--main-color);
+}
 .home-content h1 {
-  font-size: 5.7rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 .home .home-image {
-  width: 50%;
+  width: 30%;
+  /* border: 2px solid red; */
+}
+.home-image img {
+  width: 35vh;
 }
 .home .home-image img {
   width: 100%;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   border-bottom: 2rem solid var(--main-color);
-  border-right: 0.3rem solid var(--main-color);
-  border-left: 0.3rem solid var(--main-color);
+}
+.home .home-image:hover {
+  border-right: none;
+  border-left: none;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  box-shadow: 0 0 2rem var(--main-color);
+  transition: 0.3s ease;
+}
+
+.home-content p {
+  font-size: 1.4rem;
+}
+/* social media part is here */
+.social-media {
+  /* border: 2px solid rgb(3, 42, 3); */
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a :hover {
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.download-btn:hover {
+  box-shadow: none;
+}
+
+#about {
+  /* border: 2px solid blue; */
+  /* display: flex; */
+  justify-content: center;
+  background-color: var(--second-bg-color);
+  padding-bottom: 3rem;
+}
+
+.about-content {
+  width: 60%;
+  align-items: center;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+.about-content h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-heading {
+  font-size: 4rem;
+  text-align: center;
+}
+.about-content p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.about-content p:nth-of-type(1) {
+  /* border-bottom: 1px solid var(--main-color); */
+  margin-bottom: 1rem;
+}
+
+/* 1200+ hours of coding 400+ hours of dsa section style */
+#skills-hours-section-parent {
+  margin: auto;
+  /* border: 3px solid yellow; */
+  margin-top: 2.8rem;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+#skills-hours-section-parent > div {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 8px 8px 8px 8px;
+  color: var(--main-color);
+  padding: 5px;
+  height: 6rem;
+}
+#skills-hours-section-parent > div p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 650;
+}
+#skills-hours-section-parent > div:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* <><><><><><><><><><><><><><><> */
+/* Skills Section starts here */
+/* <><><><><><><><><><><><><><><> */
+#heading-my-skills {
+  /* border: 2px solid red; */
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 4rem 0rem 2rem 0rem;
+}
+
+#skills-container-card-parent {
+  background-color: var(--bg-color);
+  /* border: 2px solid red; */
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: auto;
+}
+#skills-container-card-parent .skills-card {
+  /* border: 2px solid blue; */
+  height: 18rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background: linear-gradient(var(--bg-color) 20%, var(--second-bg-color));
+  /* background-color: var(--second-bg-color); */
+  border-radius: 0.5rem 0.5rem;
+}
+#skills-container-card-parent .skills-card:hover {
+  background: linear-gradient(--main-color);
+  /* border: 0.1px var(--second-bg-color) solid; */
+  box-shadow: 0 0 2rem var(--second-bg-color);
+  /* cursor: pointer; */
+}
+#skills-container-card-parent .skills-card-img {
+  width: 100%;
+  /* border: 2px solid yellow; */
+}
+
+#skills-container-card-parent .skills-card-name {
+  /* border: 2px solid rgb(239, 0, 0); */
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+#skills-container-card-parent .skills-card-img img {
+  width: 70%;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* project part is here */
+#project-heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 4rem 0 0 2rem;
+}
+
+#projects {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid yellow; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#projects .project-card {
+  /* border: 2px solid deeppink; */
+  padding: 1rem;
+  border: 1px var(--second-bg-color) solid;
+  border-radius: 0.4rem;
+}
+#projects .project-card:hover {
+  box-shadow: 0 0 2rem var(--second-bg-color);
+}
+
+.project-img {
+  width: 100%;
+  height: 20rem;
+  /* border: 2px solid firebrick; */
+}
+.project-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.project-img:hover img {
+  transform: scale(1.06);
+}
+.project-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+}
+.project-links a {
+  color: var(--main-color);
+}
+
+.project-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.project-tech-stack {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* githug stats things */
+
+/* ==================calender */
+#calendercss {
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+#graph {
+  padding-top: 50px;
+  width: 90%;
+  margin: auto;
+}
+#graph1 {
+  padding-top: 80px;
+}
+#gitstatus {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* <><><><><><><><><><><><> */
+/* Contact part is here */
+#contact-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact {
+  margin: auto;
+  width: 70%;
+  /* border: 2px solid red; */
+  display: flex;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--second-bg-color);
+  border-radius: 0.7rem;
+}
+#contact > div {
+  width: 50%;
+  /* border: 2px solid blue; */
+}
+#contact-details > div > div {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+#contact-details > div > div > div:nth-child(1) {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.contact-details-wrapper {
+  width: 70%;
+  /* border: 2px solid yellow; */
+  /* background-color: var(--bg-color); */
+  color: bisque;
+  margin: auto;
+}
+.contact-details-wrapper a {
+  color: bisque;
+}
+.form-wrapper {
+  width: 70%;
+  /* border: 2px solid yellow; */
+  background-color: var(--bg-color);
+  margin: 0 0 0 4rem;
+  padding: 2rem;
+}
+.form-wrapper > div {
+  /* border: 1px solid red; */
+  margin-bottom: 1rem;
+}
+.form-wrapper > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 23rem;
+  border-radius: 0.3rem;
+}
+.form-wrapper > div > div:nth-child(2) input {
+  padding: 0.5rem;
+  font-weight: 500;
+}
+.form-wrapper > div > div:nth-child(2) i {
+  color: black;
+  padding: 5px;
+}
+textarea {
+  padding: 5px;
+  font-weight: 500;
+  width: 23rem;
+  border-radius: 0.3rem;
+}
+#submit-button {
+  padding: 0.5rem 3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+#submit-button:hover {
+  background-color: bisque;
 }
