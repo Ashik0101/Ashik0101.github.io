@@ -380,7 +380,7 @@
 
     <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
     <!-- Github Calendar is here -->
-    <section id="services" class="react-activity-calendar">
+    <!-- <section id="services" class="react-activity-calendar">
       <div class="max-width">
         <h3 class="title">GitHub <span>Calendar</span></h3>
         <script
@@ -428,6 +428,40 @@
             global_stats: false,
           });
         </script>
+      </div>
+    </section> -->
+
+    <section class="react-activity-calendar">
+      <div class="heading">
+        <h2>GitHub Statistics</h2>
+        <span>& Calender</span>
+      </div>
+      <br />
+      <div class="calendar">
+        <!-- Loading the data just for you. -->
+      </div>
+      <br />
+      <div id="git-stat">
+        <div>
+          <img
+            id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=Ashik0101&theme=react&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+            alt="streak-stat"
+          />
+          <br />
+          <img
+            id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=Ashik0101&count_private=true&theme=react"
+            alt="stat-card"
+          />
+        </div>
+        <div>
+          <img
+            id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashik0101&theme=react"
+            alt="top_languages"
+          />
+        </div>
       </div>
     </section>
 
