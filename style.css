@@ -252,7 +252,7 @@ span {
   margin: 4rem 0rem 2rem 0rem;
 }
 
-#skills-container-card-parent {
+.skills-container-card-parent {
   background-color: var(--bg-color);
   /* border: 2px solid red; */
   width: 80%;
@@ -261,7 +261,7 @@ span {
   gap: 1rem;
   margin: auto;
 }
-#skills-container-card-parent .skills-card {
+.skills-container-card-parent .skills-card {
   /* border: 2px solid blue; */
   height: 20rem;
   padding: 0.5rem;
@@ -271,23 +271,23 @@ span {
   background: linear-gradient(var(--bg-color) 20%, var(--second-bg-color));
   border-radius: 0.5rem 0.5rem;
 }
-#skills-container-card-parent .skills-card:hover {
+.skills-container-card-parent .skills-card:hover {
   background: linear-gradient(--main-color);
   /* border: 0.1px var(--second-bg-color) solid; */
   box-shadow: 0 0 2rem var(--second-bg-color);
 }
-#skills-container-card-parent .skills-card-img {
+.skills-container-card-parent .skills-card-img {
   width: 100%;
   /* border: 2px solid yellow; */
 }
 
-#skills-container-card-parent .skills-card-name {
+.skills-container-card-parent .skills-card-name {
   /* border: 2px solid rgb(239, 0, 0); */
   margin-top: 2rem;
   font-size: 1.7rem;
 }
 
-#skills-container-card-parent .skills-card-img img {
+.skills-container-card-parent .skills-card-img img {
   width: 70%;
 }
 
@@ -451,6 +451,45 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* github part starts here */
+
+.github-calendar {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  /* border: 2px solid red; */
+}
+.calendar {
+  border: 5px solid red;
+  width: 100%;
+  border: none;
+  margin: "auto";
+  /* min-height: auto; */
+
+  min-height: unset !important;
+}
+.github-calendar .title {
+  font-size: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.github-cards {
+  /* border: 2px solid blue; */
+  display: flex;
+
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.github-images {
+  width: 50%;
+
+  /* border: 2px solid red; */
+}
+.github-images > img {
+  width: 100%;
+}
+
 /* <><><><><><><><><><><><> */
 /* Breakpoints */
 
@@ -499,7 +538,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 650;
   }
 
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 2px solid red; */
     width: 80%;
@@ -583,7 +622,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border: 1px var(--second-bg-color) solid;
     border-radius: 0.4rem;
   }
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 2px solid red; */
     width: 80%;
@@ -668,7 +707,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 3rem;
     font-weight: 650;
   }
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 2px solid red; */
     width: 80%;
@@ -783,7 +822,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .about-content {
     /* border: 2px solid red; */
   }
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 2px solid red; */
     width: 90%;
@@ -864,7 +903,7 @@ input[type="number"]::-webkit-inner-spin-button {
     column-gap: 4rem;
     row-gap: 2rem;
   }
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 2px solid red; */
     width: 90%;
@@ -901,7 +940,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 260px) {
-  #skills-container-card-parent {
+  .skills-container-card-parent {
     background-color: var(--bg-color);
     /* border: 4px solid red; */
     width: 90%;
@@ -913,41 +952,4 @@ input[type="number"]::-webkit-inner-spin-button {
   .skills-card {
     min-height: 240px;
   }
-}
-
-.github-calendar {
-  width: 80%;
-  margin: auto;
-  margin-top: 4rem;
-  /* border: 2px solid red; */
-}
-.calendar {
-  border: 5px solid red;
-  width: 100%;
-  border: none;
-  margin: "auto";
-  /* min-height: auto; */
-
-  min-height: unset !important;
-}
-.github-calendar .title {
-  font-size: 4rem;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.github-cards {
-  /* border: 2px solid blue; */
-  display: flex;
-
-  justify-content: space-around;
-  padding: 0.5rem;
-}
-.github-images {
-  width: 50%;
-
-  /* border: 2px solid red; */
-}
-.github-images > img {
-  width: 100%;
 }
