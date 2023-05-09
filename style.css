@@ -453,7 +453,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* github part starts here */
 
-.github-calendar {
+.react-activity-calendar {
   width: 80%;
   margin: auto;
   margin-top: 4rem;
@@ -468,7 +468,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   min-height: unset !important;
 }
-.github-calendar .title {
+.react-activity-calendar .title {
   font-size: 4rem;
   margin-top: 2rem;
   text-align: center;
