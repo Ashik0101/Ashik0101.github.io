@@ -27,13 +27,23 @@
         <a href="#contact-heading" class="nav-link contact">Contact</a>
         <a
           href="./pdf/md_ashik_ansari_resume.pdf"
-          id="resume"
+          id="resume-link-1"
           class="nav-link resume"
           download
           target="_blank"
         >
           Resume <i class="bx bxs-download" id="nav-resume-dowload-icon"></i>
         </a>
+        <!-- <li class="nav-link resume">
+          <a
+            id="resume-link-1"
+            href="./pdf/md_ashik_ansari_resume.pdf"
+            target="_blank"
+            download="Md-Ashik-Ansari-Resume"
+          >
+            <button class="resume-button" id="resume-button-1">Resume</button>
+          </a>
+        </li> -->
       </div>
     </nav>
 
@@ -55,11 +65,21 @@
         </div>
         <a
           href="./pdf/md_ashik_ansari_resume.pdf"
+          id="resume-link-2"
           class="download-btn"
           download
           target="_blank"
           >Download CV</a
         >
+
+        <!-- <a
+          id="resume-link-2"
+          href="./pdf/md_ashik_ansari_resume.pdf"
+          target="_blank"
+          download="Md-Ashik-Ansari-Resume"
+        >
+          <button class="resume-button" id="resume-button-2">Resume</button>
+        </a> -->
       </div>
 
       <div class="home-image">
@@ -380,7 +400,7 @@
 
     <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
     <!-- Github Calendar is here -->
-    <!-- <section id="services" class="react-activity-calendar">
+    <section id="services" class="react-activity-calendar">
       <div class="max-width">
         <h3 class="title">GitHub <span>Calendar</span></h3>
         <script
@@ -429,16 +449,16 @@
           });
         </script>
       </div>
-    </section> -->
+    </section>
 
-    <section class="react-activity-calendar">
+    <!-- <section class="react-activity-calendar">
       <div class="heading">
         <h2>GitHub Statistics</h2>
         <span>& Calender</span>
       </div>
       <br />
       <div class="calendar">
-        <!-- Loading the data just for you. -->
+        Loading the data just for you.
       </div>
       <br />
       <div id="git-stat">
@@ -463,10 +483,11 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
     <!-- Contact Section is here -->
+
     <div id="contact-heading" class="division">Contact <span>Me</span></div>
     <div id="contact">
       <div id="contact-details">
@@ -572,6 +593,19 @@
         menuIcon.classList.remove("bx-x");
         navbar.classList.remove("active");
       };
+    </script>
+
+    <script>
+      document.getElementById("resume-link-1").addEventListener("click", () => {
+        window.open(
+          "https://drive.google.com/file/d/1gkw0ijoCR8VYJoAZaVsc1uApuW-B5cBJ/view"
+        );
+      });
+      document.getElementById("resume-link-2").addEventListener("click", () => {
+        window.open(
+          "https://drive.google.com/file/d/1gkw0ijoCR8VYJoAZaVsc1uApuW-B5cBJ/view"
+        );
+      });
     </script>
   </body>
 </html>
