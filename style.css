@@ -953,3 +953,41 @@ input[type="number"]::-webkit-inner-spin-button {
     min-height: 240px;
   }
 }
+
+#git-stat {
+  width: 100%;
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+#git-stat > div {
+  border: 2px solid blue;
+  width: 100%;
+  /* height: 17rem; */
+}
+#git-stat > div:nth-child(1) {
+  width: 100%;
+}
+#git-stat > div:nth-child(1) img {
+  width: 100%;
+  /* height: 50px; */
+}
+#git-stat > div img {
+  /* width: 100%; */
+  /* height: 20rem; */
+  /* height: 100%; */
+  /* min-height: unset !important;
+  min-width: unset !important; */
+}
+/* #git-stat > div img {
+  height: 150px;
+} */
+#second {
+  display: flex;
+}
+#second > div:nth-child(1) {
+  width: 62%;
+}
+#second > div:nth-child(1) > img {
+  width: 100%;
+}
