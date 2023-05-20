@@ -43,20 +43,22 @@ body {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Dancing Script", cursive;
 }
-
+.logo span {
+  font-family: "Dancing Script", cursive;
+}
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 .navbar a:hover,
-.navbar a#active {
+.navbar a.active {
   color: var(--main-color);
 }
 
@@ -67,20 +69,38 @@ body {
 }
 #nav-resume-dowload-icon {
   color: var(--bg-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
+
 .resume {
   padding: 0.7rem 1rem;
   background-color: var(--main-color);
   color: var(--bg-color);
   border-radius: 3px;
 }
+/* ??????????????????????????????????????? */
 
+/* ????????????????????????????????? */
+.navbar {
+  width: 60%;
+  /* border: 2px solid red; */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+#resume-button-1 a {
+  color: var(--bg-color);
+}
 #resume {
   color: var(--bg-color);
 }
 
 /* section part is here */
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
 #home {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -136,9 +156,7 @@ span {
   font-size: 1.4rem;
 }
 /* social media part is here */
-.social-media {
-  /* border: 2px solid rgb(3, 42, 3); */
-}
+
 .social-media a {
   display: inline-flex;
   justify-content: center;
@@ -160,7 +178,7 @@ span {
   box-shadow: 0 0 1rem var(--main-color);
 }
 
-.download-btn {
+#resume-button-2 {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
@@ -172,7 +190,7 @@ span {
   font-weight: 600;
   transition: 0.5s ease;
 }
-.download-btn:hover {
+#resume-button-2:hover {
   box-shadow: none;
 }
 
@@ -196,7 +214,7 @@ span {
   margin-bottom: 2rem;
 }
 .about-heading {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   text-align: center;
 }
 .about-content p {
@@ -246,7 +264,7 @@ span {
 /* <><><><><><><><><><><><><><><> */
 #heading-my-skills {
   /* border: 2px solid red; */
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: 700;
   text-align: center;
   margin: 4rem 0rem 2rem 0rem;
@@ -294,7 +312,7 @@ span {
 /* <><><><><><><><><><><><><><><><><><><><> */
 /* project part is here */
 #project-heading {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   text-align: center;
   font-weight: 700;
   margin: 4rem 0 0 2rem;
@@ -360,7 +378,7 @@ span {
 /* <><><><><><><><><><><><> */
 /* Contact part is here */
 #contact-heading {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   text-align: center;
   font-weight: 700;
   margin-top: 4rem;
@@ -452,6 +470,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* github part starts here */
+#git-stat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+}
 
 .react-activity-calendar {
   width: 80%;
@@ -464,8 +490,6 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   border: none;
   margin: "auto";
-  /* min-height: auto; */
-
   min-height: unset !important;
 }
 .react-activity-calendar .title {
@@ -494,9 +518,10 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Breakpoints */
 
 @media (max-width: 1200px) {
-  .navbar a {
+  .navbar > li a {
     font-size: 1.7rem;
     color: var(--text-color);
+    /* color: red; */
     margin-left: 2rem;
   }
   #home {
@@ -521,8 +546,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-left: 2rem;
   }
   #home {
-    min-height: 80vh;
-    /* padding: 5rem 9% 2rem; */
+    /* min-height: 100vh; */
+    padding: 10rem 9% 2rem;
   }
 
   .home-content h3 {
@@ -566,6 +591,13 @@ input[type="number"]::-webkit-inner-spin-button {
     /* border: 2px solid blue; */
   }
 }
+
+@media (max-width: 898px) {
+  .navbar li a {
+    font-size: 1.3rem;
+    /* border: 2px solid red; */
+  }
+}
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
@@ -591,7 +623,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 1.5rem 0;
     user-select: none;
   }
-  .navbar#active {
+  .navbar.active {
     display: block;
   }
   #about {
@@ -746,7 +778,12 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1.4rem;
     font-weight: 650;
   }
+  .heading {
+    font-size: 3.5rem;
+  }
 }
+
+/*React Github Calendar Styling on 10 May 2023*/
 
 @media (max-width: 575px) {
   #home {
@@ -865,6 +902,21 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: auto;
     margin-left: 0rem;
   }
+
+  #git-stat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+  }
+  #git-stat > div img {
+    width: 100%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 460px) {
@@ -881,6 +933,18 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 1rem;
     border: 1px var(--second-bg-color) solid;
     border-radius: 0.4rem;
+  }
+}
+@media (max-width: 460px) {
+  #git-stat > div:nth-child(1) > img {
+    width: 100%;
+  }
+
+  #git-stat > div:nth-child(2) > img {
+    width: 100%;
+  }
+  #git-stat > div:nth-child(3) > img {
+    width: 20rem;
   }
 }
 
@@ -926,7 +990,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1rem;
   }
   .contact-details-wrapper {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .contact-form {
@@ -936,6 +1000,23 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 100%;
     margin: auto;
     margin-left: 0rem;
+  }
+}
+@media (max-width: 335px) {
+  #git-stat > div:nth-child(1) > img {
+    width: 100%;
+  }
+  #git-stat > div:nth-child(2) > img {
+    width: 100%;
+  }
+  #git-stat > div:nth-child(3) > img {
+    width: 15rem;
+  }
+  #submit-button {
+    font-size: 85%;
+  }
+  .heading {
+    font-size: 2.5rem;
   }
 }
 
@@ -953,41 +1034,16 @@ input[type="number"]::-webkit-inner-spin-button {
     min-height: 240px;
   }
 }
-
-#git-stat {
-  width: 100%;
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-#git-stat > div {
-  border: 2px solid blue;
-  width: 100%;
-  /* height: 17rem; */
-}
-#git-stat > div:nth-child(1) {
-  width: 100%;
-}
-#git-stat > div:nth-child(1) img {
-  width: 100%;
-  /* height: 50px; */
-}
-#git-stat > div img {
-  /* width: 100%; */
-  /* height: 20rem; */
-  /* height: 100%; */
-  /* min-height: unset !important;
-  min-width: unset !important; */
-}
-/* #git-stat > div img {
-  height: 150px;
-} */
-#second {
-  display: flex;
-}
-#second > div:nth-child(1) {
-  width: 62%;
-}
-#second > div:nth-child(1) > img {
-  width: 100%;
+@media (max-width: 200px) {
+  .contact-details-wrapper {
+    width: 100%;
+    margin: auto;
+    font-size: 65%;
+  }
+  #submit-button {
+    font-size: 65%;
+  }
+  .github-heading {
+    font-size: 2rem;
+  }
 }
