@@ -114,6 +114,38 @@ setTimeout(() => {
   }, 2000);
 }, 1000);
 
+/*<><><><><><><><><><><><><><><> */
+/*Content Generator App past is here */
+let ContentGeneratorAppImages = [
+  "./image/content_generator/thumbnail.png",
+  "./image/content_generator/poem.png",
+  "./image/content_generator/story.png",
+  "./image/content_generator/joke.png",
+  "./image/content_generator/quote.png",
+];
+
+let contentGeneratorAppCard = document.getElementById(
+  "contentGeneratorAppCard"
+);
+let contentGeneratorAppIndex = 0;
+let contentGeneratorAppImg = document.createElement("img");
+contentGeneratorAppImg.src = ContentGeneratorAppImages[0];
+contentGeneratorAppCard.append(contentGeneratorAppImg);
+
+setTimeout(() => {
+  setInterval(() => {
+    contentGeneratorAppIndex++;
+    if (contentGeneratorAppIndex == ContentGeneratorAppImages.length - 1) {
+      contentGeneratorAppIndex = 0;
+    }
+    contentGeneratorAppCard.innerHTML = null;
+
+    let contentGeneratorAppImg = document.createElement("img");
+    contentGeneratorAppImg.src =
+      ContentGeneratorAppImages[contentGeneratorAppIndex];
+    contentGeneratorAppCard.append(contentGeneratorAppImg);
+  }, 2000);
+}, 1000);
 /**Sending email here */
 function sendEmail() {
   var params = {
